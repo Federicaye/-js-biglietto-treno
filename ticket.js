@@ -1,5 +1,5 @@
-let age = prompt('qual è la tua età?');
-let distance = prompt('quanti km devi percorrere?');
+let age = parseInt(prompt('qual è la tua età?'));
+let distance = parseInt(prompt('quanti km devi percorrere?'));
 let price = distance * 0.21;
 console.log(price);
 if (age < 18) {
@@ -12,3 +12,7 @@ else if (age > 65) {
 else {
     document.getElementById("ticket").innerHTML= 'il costo del biglietto è ' + (price).toFixed(2);
 }
+
+/*  -----------------------------------------------------------------------------------------------
+  parseInt
+--------------------------------------------------------------------------------------------------- */
